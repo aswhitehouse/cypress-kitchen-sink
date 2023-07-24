@@ -89,4 +89,19 @@ body {
     padding: 1rem;
     text-align: center;
   }
+
+  .scroll-box {
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #ccc;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .bottom-word {
+    margin-top: 1000px; /* This pushes the word out of view until you scroll */
+  }
   

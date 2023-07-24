@@ -1,72 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Web Page</title>
-  <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-  <header>
-    <h1>Welcome to My Web Page</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>World's Greatest Web Page</h1>
+        <nav>
+            <ul class="bread-crumb">
+                <li><a href="#" class="li-item">Home</a></li>
+                <li class="li-item">About</li>
+                <li class="li-item">Contact</li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
-    </section>
-    <section>
-        <div class="selectors-best-practices">
-            <button data-id="data-attr-btn" id="button-id" role="vis-btn">Button with ID</button>
-        </div>
-    </section>
-    <section>
-        <ul class="items-main">
-            <li class="First">
-                First Item
-            </li>
-            <li class="Second">
-                Second Item
-            </li>
-        </ul>
-    </section>
-    <section>
-        <form class="some-values">
-            <input test-attribute="test-value2">
-            <input test-attribute="test-value3">
-        </form>
-    </section>
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+            <p class="some-text">Some Text</p>
+        </section>
+        <section>
+            <div class="selectors-best-practices">
+                <button data-id="data-attr-btn" id="button-id" role="vis-btn">Button with ID</button>
+            </div>
+        </section>
+        <section>
+            <ul class="a-list">
+                <li>A List Inner Value
+                </li>
+                <li>Another List Inner Value
+                    <span class="traversal-anchor">traversal-anchor</span>
+                </li>
 
-    <section>
-      <h2>Contact Me</h2>
-      <div class="psuedo-example">This is a pseudo example</div>
-      <form>
-        <label for="name">Name:</label>
-        <input data-id="name-field" type="text" id="name" name="name">
+            </ul>
+        </section>
+        <section>
+        </section>
+        <section>
+            <ul class="items-main">
+                <li class="First">
+                    First Item
+                </li>
+                <li class="Second">
+                    Second Item
+                </li>
+            </ul>
+            <ul class="pages">
+                <li href="#"><a>Test1</a>1</li>
+                <li href="#"><a>Test2</a>2</li>
+                <li href="#"><a>Test3</a>3</li>
+                <li href="#"><a>Test4</a>4</li>
+                <li href="#"><a>Test5</a>5</li>
+            </ul>
+            <ul class="pages-list">
+                <li href="#">One</li>
+                <li href="#">Two</li>
+                <li href="#">3</li>
+                <li href="#">4</li>
+                <li href="#">5</li>
+            </ul>
+            <ul class="parents-check">
+                Parents Check
+                <p>Parent Text<span class="inner-mark-one"></span></p>
+                <p><span class="inner-mark-two"></span></p>
+            </ul>
+            <div class="slider">
+                <input type="range" id="rangeSlider" min="0" max="100" step="1" value="50">
+                <p>Selected Value: <span id="sliderValue">0</span></p>
+            </div>
+            <table class="test-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Andrew</td>
+                        <td>Whitehouse</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Wandrew</td>
+                        <td>Ahitehouse</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <div class="scroll-box">
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam odio eu nibh pellentesque varius. Suspendisse feugiat, est vel pellentesque aliquet, enim odio lacinia magna, a commodo purus justo id arcu. Ut vel eleifend nisl. Nulla facilisi. Nulla facilisi. Ut auctor eros vitae eros fermentum, at fermentum elit congue. Suspendisse feugiat arcu ac sapien blandit, et finibus dolor finibus.</p>
+                  <p class="bottom-word">End of the scroll box. Scroll down to see me!</p>
+                </div>
+        </section>
+        <section>
+            <form class="some-values">
+                <input test-attribute="test-value2">
+                <input test-attribute="test-value3">
+            </form>
+        </section>
 
-        <label for="email">Email:</label>
-        <input data-id="email-field" type="email" id="email" name="email">
+        <section>
+            <h2>Contact Me</h2>
+            <div class="psuedo-example">This is a pseudo example</div>
+            <form>
+                <label for="name">Name:</label>
+                <input data-id="name-field" type="text" id="name" name="name">
 
-        <label for="message">Message:</label>
-        <textarea data-id="message-field" id="message" name="message"></textarea>
+                <label for="email">Email:</label>
+                <input data-id="email-field" type="email" id="email" name="email">
 
-        <button data-id="submit-button" type="submit">Submit</button>
-      </form>
-    </section>
-  </main>
+                <label for="message">Message:</label>
+                <textarea data-id="message-field" id="message" name="message"></textarea>
 
-  <footer>
-    <p>&copy; 2023 My Web Page. All rights reserved.</p>
-  </footer>
+                <button data-id="submit-button" type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
 
-  <script src="scripts.js"></script>
+    <footer>
+        <p>&copy; 2023 My Web Page. All rights reserved.</p>
+    </footer>
+
+    <script>
+        //Relax it's for testing.
+        const rangeSlider = document.getElementById('rangeSlider');
+        const sliderValueDisplay = document.getElementById('sliderValue');
+        rangeSlider.addEventListener('input', () => {
+            const selectedValue = rangeSlider.value;
+            sliderValueDisplay.innerText = selectedValue;
+        });
+    </script>
 </body>
+
 </html>
